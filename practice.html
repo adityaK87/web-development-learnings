@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- adding meta tags -->
+    <meta name="description" content="this is description">
+    <meta name="robots" content="index follow">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is the title</title>
+    <!-- this is how we can add javascript -->
+    <script src="aadi.js"></script>
+    <!-- this is how we can LINK a CSS -->
+    <link rel="stylesheet" href="aadi.css">
+    <style>
+        body {
+            background-color: silver;
+        }
+
+        .name {
+            color: rgb(52, 13, 224);
+        }
+
+        /* css selectors  */
+        /*id selectors  */
+        #myname {
+            color: red;
+        }
+
+        /* class selectors */
+        .name {
+            background-color: royalblue;
+        }
+
+        /* grouping selectors */
+        span,
+        p {
+            color: sandybrown
+        }
+
+        /* element selector */
+        p {
+            font-style: italic;
+            color: rgb(255, 0, 0);
+            font-family: cursive;
+        }
+
+        #lorem12 {
+            padding: 12px;;
+            
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- there are six type of headings -->
+    <h1 style="color: seagreen;">This is the First heading</h1>
+    <h2>This is the Second heading</h2>
+    <h3>This is the Third heading</h3>
+    <h4>This is the Fourth heading</h4>
+    <h5>This is the Fifth heading</h5>
+    <h6>This is the Sixth heading</h6>
+    <!-- this is the paragraph -->
+    <p>This is Paragraph</p>
+    <p>Lorem ipsum <i>italic</i> dolor sit amet, <em>emphasised</em> consectetur <strong>strong</strong> adipisicing
+        elit. Perspiciatis, dolor?</p>
+    <!-- this is how we can add a link  -->
+    <a href="https//:www.google.com" target="_blank"> go to google</a><br>
+    <!-- this is the way to link an image -->
+    <div>
+        <img src="penguins.jpg" alt="error to load image">
+    </div>
+    <!-- these are the list -->
+    <ul type="square">
+        <li>this is First unordered list</li>
+        <li>this is Second unordered list</li>
+    </ul>
+    <ol> 
+        <li>this is First ordered list</li>
+        <li>this is Second ordered list</li>
+        <li>this is Third ordered list</li>
+    </ol>
+    <!-- this is  how we can make a table  -->
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>CLASS</th>
+                <th>SUBJECT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+                <td>data3</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- this is how we can make a form  -->
+    <form action="backend.php">
+
+        <label for="name">Name</label>
+        <!-- input from user -->
+        <input type="text" id="name">
+
+        <div> <label for="car"><strong> mycar</strong><select name="mycar" id="car">
+                    <option value="swift">swift</option>
+                    <option value="bmw">bmw</option>
+        </div>
+        </select>
+        <div>
+            reset<input type="reset">
+        </div>
+    </form>
+    <!-- formatting elements -->
+    <small>This is small comment</small><br>
+    <b>This is bold text </b><br>
+    <big>BIG TEXT</big><br>
+    <sub>subscripted text </sub><br>
+    <sup>superscripted text</sup><br>
+    <del>deleted text</del><br>
+    <ins>inserted text</ins><br>
+    <i>italic text</i><br>
+    <!-- <br> tag use for line break -->
+    <!-- span is inline element -->
+    <span>This is span element</span>
+    <!--classes and ids  -->
+    <!--&nbsp for spaces  -->
+    <p class="name " id="myname">my name is &nbsp; aditya </p>
+    <p>this is new paragraph</p>
+    <header id="lorem12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum similique veniam est.</header>
+
+
+</body>
+
+</html>

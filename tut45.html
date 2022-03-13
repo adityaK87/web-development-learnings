@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+        }
+
+        @media(max-width:300px) {
+            body {
+                background-color: cyan;
+
+            }
+        }
+
+        @media(max-width:500px) and (min-width:300px) {
+            body {
+                background-color: brown;
+
+            }
+        }
+
+        @media(max-width:800px) and (min-width:500px) {
+            body {
+                background-color: blueviolet;
+
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+                ;
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media (min-width:800px) {
+            body {
+                background-color: magenta;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+                ;
+            }
+
+        }
+
+        nav {
+            grid-area: navbar;
+
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        .bdr {
+            background-color: wheat;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            Home About Contact Us
+        </nav>
+
+        <section class="bdr">
+            <h2>Learn Web devolopemnt in Hindi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius, obcaecati quis esse modi eligendi
+                fugit, a ab aut, minus cupiditate neque. Vitae adipisci itaque ipsum suscipit eum! Nisi ad reprehenderit
+                eum asperiores dolor ullam, in distinctio illum? Voluptate officiis totam quisquam dicta quibusdam.
+                Minus laborum obcaecati quam odio voluptas molestias veniam quos, voluptatem, ab neque quae magnam
+                ducimus commodi. Consequatur dolorum saepe minima in animi impedit asperiores officia perferendis facere
+                delectus! Quod ratione dignissimos voluptate tempora, esse nobis? Perspiciatis quis amet aspernatur,
+                aliquid similique reiciendis facere minima vero neque consequuntur consectetur vitae laboriosam nisi
+                accusantium! Beatae tempore deserunt itaque omnis eligendi odit? Ullam harum eligendi voluptatibus
+                aliquid aperiam officia ad, saepe totam ea nisi reiciendis architecto dolores consectetur fugit
+                expedita, rerum rem repudiandae deserunt iste, eius cum quidem molestiae laborum. Asperiores alias nam
+                animi laudantium itaque suscipit doloribus cum sunt, eius amet quaerat. Molestiae iure tempore fugiat
+                officia officiis delectus minus cumque unde ipsam id, ullam iusto aperiam consectetur aliquid veniam
+                quam necessitatibus voluptatibus, nobis at repellat quae? Totam doloremque doloribus suscipit ex,
+                laboriosam explicabo commodi facere perferendis deserunt voluptates sint quidem vitae culpa, odio sed
+                dignissimos earum modi atque quisquam neque minus. Saepe consequatur reprehenderit deleniti atque
+                dignissimos.</p>
+        </section>
+
+
+        <aside class="bdr">
+            <h1> Let's Start</h1>
+        </aside>
+
+        <footer class="bdr">
+            Aditya &nbsp; @copyright reserved 2021
+        </footer>
+    </div>
+</body>
+
+</html>
