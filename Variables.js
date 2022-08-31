@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variable in Javascript</title>
-    <script>
+// Variable in Javascript
+    
 
         var a = 58;
 
@@ -41,20 +34,3 @@
         // console.log("the value of ++num1 is " + (++num1));
         //console.log("the value of num1-- is ",(num1--));
         //console.log("the value of --num1 is ",(--num1));
-     </script>
-</head>
-
-<body>
-    <div class="container">
-        <H1>This is the heading</H1>
-        <div class="item">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dignissimos facilis aspernatur aut,
-                voluptatibus recusandae hic quis eius eligendi laudantium expedita natus sint tempore perferendis
-                impedit rem in modi nulla quasi, omnis eveniet aliquam architecto! Praesentium odit delectus eaque neque
-                ipsam fugiat enim ratione ut! Optio voluptates consequatur non, corrupti ducimus iure accusamus
-                repudiandae veniam animi vero totam tenetur praesentium harum numquam dicta facilis.</p>
-        </div>
-    </div>
-</body>
-
-</html>

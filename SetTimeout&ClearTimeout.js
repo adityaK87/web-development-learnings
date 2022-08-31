@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript SetTimeout and ClearTimeout</title>
-</head>
-
-<body>
-    <div class="container">
-        <h1> Time now is <span id="time"></span></h1>
-    </div>
-    <script>
         console.log("Hello World");
         // setTimeout <-- Allow us to run the function once after the interval of time
         // clearTimeeout <-- Allow us to run the function repeatedly after the interval of time
@@ -34,7 +20,4 @@
         }
 
         setInterval(displayTime,10000);
-    </script>
-</body>
-
-</html>
+  

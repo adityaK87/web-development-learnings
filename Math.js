@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math object</title>
-</head>
-
-<body>
-    <div class="container">
-        This is math object tutorial
-    </div>
-    <script>
         //PRINTING THE MATH OBJECT
         let m = Math;
         console.log(m);
@@ -72,8 +58,4 @@
         console.log("The random number is " ,r);
         console.log("The random number is " ,r1_100);
         
-        
-    </script>
-</body>
-
-</html>
+  

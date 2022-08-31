@@ -1,3 +1,4 @@
+// Function in Javascript
 console.log("This is tutorial 53");
 
 function greet(name, greettext="greeting from JavaScript"){

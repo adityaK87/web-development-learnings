@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> JavaScript Date </title>
-</head>
-<body>
-      <script>
+
 
         console.log("This is Date and Time tutorial");
         let now= new Date();
@@ -41,6 +32,3 @@
         newDate.setDate(05)
         console.log(newDate)
 
-    </script>
-</body>
-</html>
