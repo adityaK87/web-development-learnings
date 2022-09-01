@@ -26,3 +26,32 @@ span {
     color: yellow;
     background-color: thistle;
 }
+
+
+
+h2 {
+
+
+    color: black;
+    background-color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* if p is contained by any li  which is contained by div  */
+/*div  li p{
+    color :red;
+    background-color:green ;
+}*/
+
+/* if p is right inside div  then this CSS will applied*/
+/* div  > p{
+    color:burlywood;
+    background-color:blue;
+} */
+
+/* p is right after div ie. p is the next sibling  of div  */
+/* div+p {
+    color: blueviolet;
+    background-color: palevioletred;
+} */
