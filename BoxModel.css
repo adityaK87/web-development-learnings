@@ -1,0 +1,25 @@
+/* This is for tut20.html */
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: burlywood;
+    border: 2px solid rgb(150, 238, 35);
+    /* we  can set padding top ,right ,left, bottem 
+           padding-top: 79px;*/
+
+    /* padding-bottom: 79px; 
+            padding-left: 34px; */
+
+    /* padding: 23px 34px 24px 45px; padding/margin =top right bottom left*/
+    /* padding:y(top/bottom) x(left/right); */
+    padding: 34px 9px;
+    margin: 14px 9px;
+    border-radius: 288px;
+    width: 133px;
+
+
+}

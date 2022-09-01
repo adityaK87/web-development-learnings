@@ -1,0 +1,28 @@
+/* element selectors */
+p {
+    border: 2px solid indigo;
+
+}
+
+/* id selectors */
+#firstpara {
+    color: green
+}
+
+/* class selectors */
+.bgblue {
+    color: greenyellow;
+    background-color: grey;
+}
+
+.bgreen {
+    background-color: red;
+}
+
+/* grouping selectors */
+
+footer,
+span {
+    color: yellow;
+    background-color: thistle;
+}

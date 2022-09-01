@@ -1,0 +1,55 @@
+
+body{
+    margin:0px;
+    padding: 0px;
+}
+.navbar {
+
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    padding: 13px 20px;
+
+}
+
+.navbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: blue;
+    background-color: burlywood;
+    border-radius: 4px;
+}
+
+.navbar input {
+    width: 123px;
+    float: right;
+    padding: 3px 17px;
+    margin: 10px 29px;
+    border-radius: 27px;
+}
+
+/* img {
+    display: block;
+    border-radius: 0;
+    height: 93px;
+    width: 92px;
+    padding-left: 18px;
+    padding-top: 10px; 
+}*/
+
+
+/* .search{
+float: right;
+} */

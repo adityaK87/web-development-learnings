@@ -1,0 +1,47 @@
+.container {
+    display: block;
+    width: 233px;
+    margin: auto;
+}
+
+input {
+    display: block;
+}
+
+input[type="text"] {
+    border: 2px solid red;
+    padding: 23px;
+}
+
+a[target] {
+    font-size: 23px;
+    color: palevioletred;
+}
+
+a[target="_self"] {
+    font-size: 20px;
+    color: blueviolet;
+}
+
+/* this will appply for css third child */
+/* li:nth-child(3) {
+    color: cyan;
+} */
+
+/* li:nth-child(2n+0) {
+    color: magenta;
+} */
+
+/* li:nth-child(3n+3) {
+    color: yellow;
+} */
+
+/* odd child  */
+li:nth-child(odd) {
+    color: yellowgreen;
+}
+
+/* even  child  */
+li:nth-child(even) {
+    color: rgb(255, 106, 6);
+}

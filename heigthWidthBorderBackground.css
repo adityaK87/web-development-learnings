@@ -1,0 +1,17 @@
+#firstpara {
+    color: red;
+    background-color: royalblue;
+    border: 2px solid grey;
+
+}
+
+#secondpara {
+    background-color: green;
+  
+}
+
+#thirdpara {
+    color: rosybrown;
+    border: 2px rebeccapurple;
+    background-image: url(https://www.codewithharry.com/assets/img/logo.png);
+}
