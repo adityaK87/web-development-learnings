@@ -1,0 +1,32 @@
+@import 'variables';
+
+header {
+    nav {
+        background: $backround-color;
+        border-color: $border-color;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+
+            li {
+                list-style: none;
+                font-size: 400px;
+                font-family: $font-family;
+
+                a {
+                    text-decoration: none;
+                    color: rgb(57, 57, 57);
+
+                    &:hover {
+                        color: black;
+                        background: $backround-color;
+                        cursor: $cursor-Type;
+                    }
+                }
+
+            }
+        }
+    }
+}
