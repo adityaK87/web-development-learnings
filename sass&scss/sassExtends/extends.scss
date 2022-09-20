@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    margin: 0px 0px 10px 10px;
+}
+
+#first {
+    width: 300px;
+    font-size: 5px;
+    line-height: 5px;
+    background: mediumorchid;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 5px 4px;
+}
+
+%first {//now it is a placeholder 
+    width: 300px;
+    font-size: 5px;
+    line-height: 5px;
+    background: mediumorchid;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 5px 4px;
+}
+
+#second {
+    width: 400px;
+    background: mediumpurple;
+    // @extend #first;
+    @extend %first;
+}
+
+#third {
+    width: 500px;
+    background: #6a30de;
+    // @extend #first;
+    @extend %first;
+}
