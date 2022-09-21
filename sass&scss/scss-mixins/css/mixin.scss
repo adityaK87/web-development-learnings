@@ -1,5 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 @mixin bd-radius($value: 5px) {
-    //if we forgot to pass an arfuments the the default value is 5px
+    //if we forgot to pass an arguments the  default value is 5px
     -webkit-border-radius: $value;
     -moz-border-radius: $value;
     border-radius: $value;
@@ -7,16 +11,12 @@
 
 
 @mixin box-shadow($top , $right, $blur, $color) {
-
     -webkit-box-shadow: $top $right $blur $color;
     -moz-border-shadow: $top $right $blur $color ;
     box-shadow: $top $right $blur $color;
 
 }
 
-* {
-    box-sizing: border-box;
-}
 
 body {
     font: 18px/25px arial;
@@ -45,10 +45,9 @@ div {
 }
 
 #third {
-
     width: 400px;
     height: 200px;
     background-color: blueviolet;
     @include bd-radius(30px);
-    @include box-shadow(5px ,12px ,0px ,#ff00ff)
+    @include box-shadow(5px, 12px, 0px, #ff00ff)
 }

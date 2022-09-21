@@ -12,17 +12,20 @@ header {
 
             li {
                 list-style: none;
-                font-size: 400px;
                 font-family: $font-family;
 
                 a {
                     text-decoration: none;
                     color: rgb(57, 57, 57);
+                    font-size: $font-size;
 
                     &:hover {
                         color: black;
                         background: $backround-color;
                         cursor: $cursor-Type;
+                        color: $link-color;
+
+
                     }
                 }
 

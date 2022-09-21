@@ -8,20 +8,25 @@ div {
 
 #first {
     width: 300px;
-    font-size: 5px;
-    line-height: 5px;
+    font-size: 10px;
+    line-height: 10px;
     background: mediumorchid;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px 0px 5px 4px;
+    margin: 0px 0px 51px 42px;
+    border-radius: 4px;
 }
 
-%first {//now it is a placeholder 
+%first {
+    //now it is a placeholder 
     width: 300px;
-    font-size: 5px;
-    line-height: 5px;
+    text-align: center;
+    padding: 12px 12px;
+    height: 150px;
+    font-size: 15px;
+    // line-height: 10px;
     background: mediumorchid;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px 0px 5px 4px;
+    margin: 0px 0px 51px 42px;
 }
 
 #second {
