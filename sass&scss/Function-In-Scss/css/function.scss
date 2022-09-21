@@ -1,0 +1,74 @@
+
+//Functions in sass
+$container-width :1200;
+
+@function half($width) {
+    @return $width / 2+px;
+}
+
+@function one-third($width) {
+    @return $width / 3+px;
+}
+
+@function one-fourth($width) {
+    @return $width / 4+px;
+}
+
+.half-width {
+    width: half($container-width);
+}
+
+.one-third-width {
+    width: one-third($container-width);
+}
+
+.one-fourth-width {
+    width: one-fourth($container-width);
+}
+
+//INBUILD FUNCTION IN SASS
+.inbuild-function {
+    margin: abs(-12px);
+    // it returns the absolute (POSITIVE ) value
+
+    margin: ceil(4.3px); // above value// it returns the non-decimal value => 5
+    margin: ceil(4.0px); //it simple retuns 4px
+
+    margin: floor(3.4px); //it returns lower value =>3px
+
+    margin: round(2.4px); // it returns 2 if the number after decimal is less than 5
+    margin: round(2.4px); // it returns 3 if the number after decimal is Greater than or equal to 5
+
+
+    padding: max(12px, 1px, 13px); //it returns the maximum value among them
+    padding: min(12px, 1px, 13px); //it returns the minimum value among them
+
+
+    margin: percentage(0.2); //it returns the percentage
+    margin: comparable(1px, 2px); // it returns the boolean value => TRUE OR FALSE
+    margin: random(); // this will give a random value between 0 to  1
+    margin: random(10); // this will give a random value between 0 to  10
+
+
+
+    margin: unit(10px); // this will return a unit of measurments =>"px"
+    margin: unit(10em * 1px); //  em*px
+    margin: unitless(10); //IF UNIT IS GIVEN THEN RETURN FALSE ELSE TRUE
+}
+
+
+
+// STRING FUNCTION IN SASS
+
+.string-function {
+    font-family: quote(Arial); //output => "Arial"
+    font-family: unquote("Arial"); //output => Arial
+    font-family: to-upper-case("Arial"); //output => "ARIAL"
+    font-family: to-lower-case("Arial"); //output => "arial"
+    font-family: str-length("Arial"); //output => 5
+    font-family: str-index("Helvetica Neue", N); //output =>11
+    font-family: str-insert("Helvetica Neue", "Mono ", 11); //output =>Helvetica Mono Neue
+    font-family: str-slice("Helvetica Neue", 3); //output =>vetica Mono Neue
+    font-family: str-slice("Helvetica Neue", 3, 10); //output =>"lvetica "
+    font-family: unique-id(); //returns a unique id of characters 9
+}

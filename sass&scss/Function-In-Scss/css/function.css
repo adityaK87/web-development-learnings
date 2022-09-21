@@ -1,0 +1,39 @@
+.half-width {
+  width: 600px; }
+
+.one-third-width {
+  width: 400px; }
+
+.one-fourth-width {
+  width: 300px; }
+
+.inbuild-function {
+  margin: 12px;
+  margin: 5px;
+  margin: 4px;
+  margin: 3px;
+  margin: 2px;
+  margin: 2px;
+  padding: 13px;
+  padding: 1px;
+  margin: 20%;
+  margin: true;
+  margin: 0.9675949816;
+  margin: 6;
+  margin: "px";
+  margin: "em*px";
+  margin: true; }
+
+.string-function {
+  font-family: "Arial";
+  font-family: Arial;
+  font-family: "ARIAL";
+  font-family: "arial";
+  font-family: 5;
+  font-family: 11;
+  font-family: "Helvetica Mono Neue";
+  font-family: "lvetica Neue";
+  font-family: "lvetica ";
+  font-family: u5gdurre2; }
+
+/*# sourceMappingURL=function.css.map */
