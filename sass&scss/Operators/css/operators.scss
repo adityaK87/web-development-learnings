@@ -1,0 +1,75 @@
+$var1: 10;
+$var2: 2;
+
+.abc {
+    // padding: 12px==12px; //comparison operators ==
+    // padding: 12px !=12px; //comparison operators !=
+
+    //relational operators ==> work only with numeric values
+    // we can compare with the units
+    // padding: 100px>30px;
+    // padding: 1000ms>=2s;
+
+    // error if we compare two different types of category
+    // padding: 12px==1s;
+
+
+
+    //Boolean Operators 
+    //  1 and = if both the condition are true then TRUE else FALSE 
+    // padding: arial=="arial" and 10px==10px;
+    // padding: arial=="arial" and 14px==10px;
+
+    //  2 or = if Either  condition is  true then TRUE else FALSE
+    // padding: arial=="arial" or 14px==10px;
+    // padding: arial=="sans-serif" or 14px==10px;
+
+    //  3 not = returns the opposite values
+    // padding: not 10==10px;
+    // padding: not 10px !=1px;
+
+
+    //String and numeric operator
+    // concatination 
+    padding: $var1 + px;
+    //numeric 
+    padding: $var1 + $var2+px;
+    padding: $var1 - $var2+px;
+    padding: $var1 * $var2+px;
+    padding: $var1 / $var2+px;
+    padding: $var1 % $var2+px;
+
+
+    
+}
+
+.test {
+    font-size: $var1+px;
+
+
+}
+
+.test h1 {
+    font-size: $var1 * 2 + px;
+}
+
+//SASS INTERPOLATION
+@mixin margin($position, $value) {
+    margin-#{$position}: $value + px;
+}
+
+.test {
+    @include margin(left, 10)
+}
+
+// interpolation in css selectors
+@mixin set-icon($name) {
+    .icon-#{$name} {
+        background : url("../../../{$name}.jpg");
+    }
+}
+
+@include set-icon(Penguins);
+
+
+
