@@ -1,0 +1,21 @@
+#first,
+#second {
+  width: 400px;
+  height: 100px;
+  margin: 12px;
+  padding: 12px;
+  border: 1px solid black; }
+
+#first {
+  background: green; }
+
+#second {
+  background: #004300;
+  background: #00b300;
+  background: #008015;
+  background: green;
+  background: #0d730d;
+  background: green;
+  background: rgba(0, 128, 0, 0.7); }
+
+/*# sourceMappingURL=color-function.css.map */

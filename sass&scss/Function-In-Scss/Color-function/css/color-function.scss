@@ -1,0 +1,26 @@
+$base-color: green;
+
+#first,
+#second {
+    width: 400px;
+    height: 100px;
+    margin: 12px;
+    padding: 12px;
+    border: 1px solid black;
+}
+
+#first {
+    background: $base-color;
+}
+
+#second {
+    //these function can be used in hover effects
+    background: darken($base-color , 12 /* it is in % */ ); //dark color of the $base-color
+    background: lighten($base-color , 10); //light color of the $base-color
+    background: adjust-hue($base-color , 10 /* it is in degree */); //it shows a dark or light version of the $base-color
+    background: saturate($base-color , 50 ); //it shows brighter version of the $base-color
+    background: desaturate($base-color , 20 ); //it shows darker version of the $base-color
+    background: mix($base-color,green , 50 ); //it mix two colors and give a new color 
+    background: transparentize($base-color , 0.3 ); //it mix two colors and give a new color 
+
+}
