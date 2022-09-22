@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAiEA,sBAAa;EACT,KAAK,EAAE,IAAI",
+"sources": ["Sass-selector-function.scss"],
+"names": [],
+"file": "Sass-selector-function.css"
+}

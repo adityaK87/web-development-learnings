@@ -1,0 +1,68 @@
+// $selector : selector-nest("ul", "li");
+
+// #{$selector} {
+//     width: 10px;
+// }
+
+// $selector : selector-nest(".abc , .xyz", "p");
+
+
+// #{$selector}{
+//     width: 12px;
+// }
+
+// $selector : selector-nest(".abc," , "&:hover" ); //add a hover on the class abc
+
+
+// #{$selector}{
+//     width: 12px;
+// }
+
+
+// $selector : selector-append(".abc" , "_copy ,_test" ); // returns a new name //.abc_copy, .abc_test
+
+
+// #{$selector}{
+//     width: 12px;
+// }
+
+
+
+// $selector : selector-replace("a.abc" , ".abc" ,".link" ); // a.link 
+
+
+// #{$selector}{
+//     width: 12px;
+// }
+
+
+// $selector : is-superselector("a" ,"a.link" ); //true  
+
+
+// #{$selector}{
+//     width: 12px;
+// }
+
+
+// $selector :simple-selectors("a.abc"); // a , .abc 
+
+
+// #{$selector} {
+//     width: 12px;
+// }
+
+
+// $selector :selector-unify("a.abc","a.active"); // a.abc.active
+
+
+// #{$selector} {
+//     width: 12px;
+// }
+
+
+$selector :selector-extend("a.active", "a", ".link");//a.active, .active.link 
+
+
+#{$selector} {
+    width: 12px;
+}
