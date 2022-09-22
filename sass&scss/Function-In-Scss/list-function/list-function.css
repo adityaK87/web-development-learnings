@@ -1,0 +1,14 @@
+.test {
+  margin: 3;
+  margin: 2;
+  margin: 12px;
+  margin: 10px, 2em, 13px;
+  margin: 10px, 12px, 13px, 14px, 15px, 16px;
+  margin: 10px, 12px, 13px, 60px;
+  margin: 10px 14px, 12px 15px, 13px 16px;
+  margin: red 10px, green 12px, blue 23px;
+  margin: 2;
+  margin: comma;
+  margin: false; }
+
+/*# sourceMappingURL=list-function.css.map */

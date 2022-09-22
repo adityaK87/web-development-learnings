@@ -1,0 +1,17 @@
+$List: 10px, 12px, 13px;
+$List2: 14px 15px 16px;
+
+.test {
+    //it returns the number of list items 
+    margin: length($List); // 3
+    margin: length((width:10px, height: 10px)); // 2
+    margin: nth($List , 2); // which value is at 2 index
+    margin: set-nth($List , 2, 2em); //sets  value is at 2nd index
+    margin: join($List , $List2); //joins two lists
+    margin: append($List , 60px, comma);
+    margin: zip($List , $List2);
+    margin: zip((red green blue), (10px 12px 23px));
+    margin: index($List , 12px);
+    margin: list-separator($List);
+    margin: is-bracketed($List); //returns true or false
+}
