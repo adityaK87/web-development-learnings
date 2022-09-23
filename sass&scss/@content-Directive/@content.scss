@@ -1,0 +1,85 @@
+@mixin bd-radius ($value) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    border-radius: $value;
+    @content;
+}
+
+.abc {
+    @include bd-radius(5px) {
+        border-style: dotted;
+    }
+}
+
+//we can pass selector as well as
+@mixin test {
+    @content;
+}
+
+@include test {
+    .block {
+        color: forestgreen;
+    }
+}
+
+//inside class or id selector
+@mixin test {
+    #menu {
+        @content;
+    }
+}
+
+@include test {
+    .block {
+        color: forestgreen;
+    }
+}
+
+//#menu .block {
+//color: forestgreen; }
+
+
+// On hover effect
+
+@mixin hover {
+    &:hover {
+        @content;
+    }
+}
+
+.button {
+    border: 1px solid black;
+
+    @include hover {
+        border-width: 2px;
+    }
+}
+
+body {
+    background: grey;
+}
+
+
+@mixin media($width) {
+    @media screen and (max-width:$width) {
+        @content;
+    }
+}
+
+@include media(1300px) {
+    body {
+        background: red;
+    }
+}
+
+ 
+@include media(1000px) {
+    body {
+        background: green;
+    }
+}
+@include media(700px) {
+    body {
+        background: yellow;
+    }
+}
