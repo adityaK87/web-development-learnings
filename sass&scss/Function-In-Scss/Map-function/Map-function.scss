@@ -1,0 +1,42 @@
+// $font-weight : ("regular" :400, "medium" :500, "bold": 700);
+// $light-weight : ("lightest" :100, "light" :300);
+// // $merge :map-merge($font-weight , $light-weight);
+// $remove :map-remove($font-weight , "regular");
+
+
+
+// .test {
+//     font-weight: map-get($font-weight, "regular");
+//     font-weight: map-keys($font-weight); //"regular", "medium", "bold"
+//     font-weight: map-values($font-weight); // 400, 500, 700;
+//     // font-weight: map-keys($merge); //"regular", "medium", "bold", "lightest", "light"; 
+//     font-weight: map-keys($remove); //"medium", "bold"
+//     font-weight: map-has-key($font-weight, "bold"); //true;
+// }
+
+
+//INTROSPECTION FUNCTION
+
+$num: 10px;
+$char: "Arial";
+$list :10px 12px 13px;
+$map : ("regular":100, "bold":200);
+
+
+@mixin add {
+    border-radius: 5px;
+}
+
+@function character ($a , $b) {
+    @return $a+$b;
+}
+
+.test {
+
+    padding: variable-exists(num); //true; 
+    padding: global-variable-exists(num); //true; 
+    padding: function-exists(character); //true; 
+    padding: mixin-exists(add); //true; 
+    padding: type-of($num); // number 
+
+}
