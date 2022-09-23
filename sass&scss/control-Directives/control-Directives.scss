@@ -1,0 +1,140 @@
+// @if 
+// $test: 6;
+
+
+// p {
+//     @if $test < 5 {
+//         color: blue;
+//     }
+
+//     @if 1+2==3 {
+//         font-size: 12px;
+//     }
+
+//     @if 10<30 {
+//         background: black
+//         ;
+//     }
+
+// }
+
+//@else 
+
+// p {
+//     @if $test <=5 {
+//         color: blue;
+//     }
+
+//     @else if $test >5 and $test < 10 {
+//         color: aqua;
+//     }
+
+//     @else {
+//         color: red;
+//     }
+// }
+
+// @mixin changeColor($value) {
+//     font-size: $value + px;
+
+//     @if $value >0 and $value <=20 {
+//         color: blue;
+//     }
+
+//     @else if $value >20 and $value <=50 {
+//         color: red;
+//     }
+
+//     @else {
+//         color: green;
+//     }
+
+// }
+
+// .abc {
+//     @include changeColor(25);
+// }
+
+// @mixin box($value) {
+//     @if $value ==dark {
+//         background: #000;
+//         color: #fff;
+//     }
+
+//     @else if $value ==light {
+//         background: lightgray;
+//         color: #000;
+//     }
+// }
+
+// #mybox {
+//     @include box(light);
+//     width: 200px;
+//     margin: 100px;
+//     padding: 20px;
+//     font-family: Arial;
+// }
+
+
+// @for directive
+// @for $i from 1 through 4 {
+//     .list-#{$i} {
+//         width: 100px * $i;
+//         margin: 10px * $i;
+//         padding: 10px * $i;
+//         background: darken(pink, $i * 10%);
+//     }
+// }
+
+
+
+
+// @each directive
+// $list:(normal,bold,italic);
+// @each $i in $list {
+//     .#{$i}{
+//          font-weight: $i;
+//     }
+// }
+
+
+
+// for two dimensional list
+// $list: (
+//     (normal, bold, 10px),
+//     (emphasis, italic, 15px)
+// );
+
+// @each $name ,$style,$size in $list {
+//     .#{$name} {
+//         font-weight:$size;
+//         font-style: $style;
+//     }
+// }
+
+
+
+// each for map
+
+// $list:(normal : 10px ,bold:12px);
+// @each $i , $f-size in $list {
+//     .#{$i}{
+//          font-weight: $f-size;
+//     }
+// }
+
+
+
+//@while loop
+
+$i:10;
+$f-size:10;
+@while $i <= 50 {
+    .padding{
+        padding-left: 1px * $i;
+        font-size: $f-size + px;
+    }
+    $i:$i+10;
+    $f-size:$f-size + 2;
+    
+}
