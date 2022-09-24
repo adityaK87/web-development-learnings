@@ -2,6 +2,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .container {
@@ -22,7 +23,7 @@
     border-radius: 9px;
     height: 200px;
     width: 200px;
-    transition: all .1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .box:hover {

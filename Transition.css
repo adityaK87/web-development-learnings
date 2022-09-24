@@ -1,5 +1,8 @@
 /* This is CSS Transition tutorial */
-body{ background-color:black;}
+body {
+    background-color: black;
+}
+
 #box {
     display: flex;
     background-color: red;
@@ -13,10 +16,11 @@ body{ background-color:black;}
     transition-delay: 2s; */
 
     /* transition: short hand property in one line  */
-    transition: background-color 2s ease-in-out 2s;
+    transition: background-color 2s ease-in-out 2s; /*it will take 2s to change background color */
 
 }
-#box:hover{
+
+#box:hover {
     background-color: blue;
     width: 400px;
     height: 400px;
