@@ -1,5 +1,5 @@
 // var String1 = 'This is our String1';
-// var String1 = 'This is our String2';
+// var String2 = 'This is our String2';
 // let a = 'u'
 // {
 //      let a = 'u5'
@@ -28,24 +28,30 @@
 //     console.log('you can Drink cold drink only')
 // }
 
-const cups = 45;
-switch (cups) {
-    case  4:
-        console.log('The value of cups is 4' )
-        
-        break;
+// const cups = 45;
+// switch (cups) {
+//     case  4:
+//         console.log('The value of cups is 4' )
 
-    case  42:
-        console.log('The value of cups is 42' )
-        
-        break;
+//         break;
 
-    case  44:
-        console.log('The value of cups is 44' )
-        
-        break;
+//     case  42:
+//         console.log('The value of cups is 42' )
 
-    default:
-        console.log("The value of cups is none of 4, 42 ,43 ");
-        break;
-}
+//         break;
+
+//     case  44:
+//         console.log('The value of cups is 44' )
+
+//         break;
+
+//     default:
+//         console.log("The value of cups is none of 4, 42 ,43 ");
+//         break;
+// }
+
+
+const Days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+// Days.map((el) => {
+//     console.log(el)
+// })
